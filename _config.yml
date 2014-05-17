@@ -1,0 +1,28 @@
+# Dependencies
+markdown: redcarpet
+highlighter: pygments
+
+# Permalinks
+permalink: pretty
+
+# Setup
+title: Isolation and loneliness
+tagline: 'my ravings'
+description: 'Little blog of my (in)activities'
+baseurl: http://matveichev.com/
+url: 'http://0.0.0.0:4000'
+paginate_path: 'page:num'
+paginate: 5
+exclude: [ Rakefile ]
+
+author:
+  name: 'Alexey Matveichev'
+  url: https://twitter.com/mrklein
+  email: alexey.matveichev@gmail.com
+
+# Custom vars
+version: 1.0.0
+
+github: 'https://github.com/mrklein'
+
+# vim: set ft=yaml et sw=2 ts=2 sts=2:
