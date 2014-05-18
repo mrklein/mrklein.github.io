@@ -40,6 +40,8 @@ task :post do
     post.puts "category: posts"
     post.puts "---"
   end
+
+  system "mvim #{filename}"
 end # task :post
 
 desc "Launch preview environment"
