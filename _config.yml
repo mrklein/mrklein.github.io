@@ -9,8 +9,8 @@ permalink: pretty
 title: Isolation and loneliness
 tagline: 'my ravings'
 description: 'Little blog of my (in)activities'
-# baseurl: http://matveichev.com/
-url: 'http://0.0.0.0:4000/'
+baseurl: http://matveichev.com/
+# url: 'http://0.0.0.0:4000/'
 paginate_path: 'page:num'
 paginate: 1
 exclude: [ Rakefile ]
