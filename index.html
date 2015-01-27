@@ -1,41 +1,19 @@
----
-layout: default
-title: Home
----
+<!doctype html>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <span class="post-date-idx">{{ post.date | date_to_string }}</span>
-    <h3 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h3>
-    {% comment %} <span class="post-date">{{ post.date | date_to_string }}</span> {% endcomment %}
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
+<html>
+<head>
+<title>my own self</title>
+</head>
+<body style="font-size: 16pt">
+<div style="text-align: center; width: 100%">
+	<img src="http://matveichev.com/images/tube.jpg" border="0"/>
 </div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+<div style="text-align: center; width: 100%">
+	<a href="https://github.com/mrklein">github</a><br/>
+	<a href="http://matveichev.blogspot.com">blogger</a><br/>
+	<a href="https://www.flickr.com/photos/91014676@N05/">flickr</a><br/>
+	<a href="http://mrklein.tumblr.com">tumblr</a>
 </div>
+</body>
+</html>
 
-{% comment %}
-vim:set ft=liquid et sw=2 ts=2 sts=2:
-{% endcomment %}
